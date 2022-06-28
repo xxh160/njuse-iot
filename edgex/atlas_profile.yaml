@@ -1,0 +1,34 @@
+name: "atlas_profile"
+manufacturer: "hwd"
+model: "hwd"
+labels:
+  - "camera"
+  - "led"
+description: "Atlas200DK with camera and leds."
+
+deviceResources:
+  - name: "idx"
+    description: "Both rubbish type idx and led idx: 0, 1, 2, 3"
+    properties:
+      value: { type: "Int16", readWrite: "W", mediaType: "application/json" }
+      units: { type: "Int16", readWrite: "R" }
+
+deviceCommands:
+  - name: "idx"
+    get:
+      - { operation: "get", deviceResource: "idx" }
+    set:
+      - { operation: "set", deviceResource: "idx", parameter: "idx" }
+
+coreCommands:
+  - name: led
+    put:
+      path: "/api/{deviceId}/led"
+      parameterNames: ["idx"]
+      responses:
+        - code: "200"
+          description: "set LED"
+          expectedValues: ["idx"]
+        - code: "503"
+          description: "service unavailable"
+          expectedValues: []

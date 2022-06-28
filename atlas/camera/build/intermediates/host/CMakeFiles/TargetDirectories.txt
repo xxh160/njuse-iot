@@ -1,0 +1,7 @@
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/install/strip.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/edit_cache.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/main.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/rebuild_cache.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/list_install_components.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/install/local.dir
+/home/HwHiAiUser/Workspace/iot-dev/hw3/samples/cplusplus/level1_single_api/5_200dk_peripheral/ascendcamera/build/intermediates/host/CMakeFiles/install.dir

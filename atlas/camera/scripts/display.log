@@ -1,0 +1,15 @@
+2022-06-01 22:23:20,529-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 22:24:08,220-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 22:26:41,386-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 22:26:41,387-INFO-presenter_server.py:79 presenter server starting, type: display
+2022-06-01 22:29:40,243-INFO-presenter_socket_server.py:255 create new connection:client-ip:192.168.1.2, client-port:49368, fd:13
+2022-06-01 22:29:40,245-ERROR-presenter_socket_server.py:354 channel name presentername is not exist.
+2022-06-01 22:29:40,245-INFO-channel_manager.py:216 register channel: presentername
+2022-06-01 22:29:40,245-INFO-channel_handler.py:216 create videothread-presentername...
+2022-06-01 22:29:40,245-INFO-channel_manager.py:127 create channel resource, channel_name:presentername, channel_fd:13, media_type:video
+2022-06-01 22:30:12,352-ERROR-presenter_socket_server.py:142 socket 13 receive msg head null
+2022-06-01 22:30:12,353-ERROR-presenter_socket_server.py:204 msg_total_len is None.
+2022-06-01 22:30:12,353-INFO-display_server.py:60 clean fd:13, conns:{13: <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.1.223', 7002), raddr=('192.168.1.2', 49368)>}
+2022-06-01 22:30:12,353-INFO-channel_handler.py:124 videothread-presentername set _close_thread_switch True
+2022-06-01 22:30:12,353-INFO-channel_manager.py:139 clean channel: presentername's resource
+2022-06-01 22:30:12,353-INFO-channel_handler.py:227 Stop thread:videothread-presentername.

@@ -1,0 +1,1 @@
+SRCS += $(wildcard src/*.cpp)

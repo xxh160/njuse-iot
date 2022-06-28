@@ -1,0 +1,14 @@
+2022-06-01 19:51:23,543-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 19:51:23,544-INFO-presenter_server.py:79 presenter server starting, type: display
+2022-06-01 19:55:09,496-INFO-presenter_socket_server.py:255 create new connection:client-ip:127.0.0.1, client-port:40726, fd:12
+2022-06-01 19:55:23,759-ERROR-presenter_socket_server.py:186 socket 12 receive msg body null
+2022-06-01 19:55:23,759-INFO-display_server.py:60 clean fd:12, conns:{12: <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7002), raddr=('127.0.0.1', 40726)>}
+2022-06-01 19:58:17,735-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 19:58:17,737-INFO-presenter_server.py:79 presenter server starting, type: display
+2022-06-01 20:01:51,855-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 20:01:51,856-INFO-presenter_server.py:79 presenter server starting, type: display
+2022-06-01 20:04:01,610-INFO-presenter_socket_server.py:255 create new connection:client-ip:127.0.0.1, client-port:40846, fd:13
+2022-06-01 20:04:05,442-ERROR-presenter_socket_server.py:186 socket 13 receive msg body null
+2022-06-01 20:04:05,442-INFO-display_server.py:60 clean fd:13, conns:{13: <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7002), raddr=('127.0.0.1', 40846)>}
+2022-06-01 22:09:03,077-INFO-display_server.py:212 presenter server is starting...
+2022-06-01 22:09:03,079-INFO-presenter_server.py:79 presenter server starting, type: display
