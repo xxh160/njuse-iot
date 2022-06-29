@@ -27,8 +27,11 @@ def led(id):
     print("requesting device:", id)
 
     idx = request.json.get("idx")
-
-    os.system("bash led.sh " + str(idx))
+    dir_path = os.path.realpath(__file__).rsplit("/", 1)[0]
+    led_path = os.path.join(dir_path, "led.sh")
+    cmd = "bash {} {}".format(led_path, idx)
+    print("+ " + cmd)
+    os.system(cmd)
     res = {'idx': idx}
     return jsonify(res), 200
 

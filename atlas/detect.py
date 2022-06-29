@@ -8,8 +8,8 @@ from PIL import Image
 
 
 def prepare(pic1: str, pic2: str):
-    os.system("bash camera.sh " + pic1)
-    os.system("bash camera.sh " + pic2)
+    os.system("bash camera.sh {} > /dev/null 2>&1".format(pic1))
+    os.system("bash camera.sh {} > /dev/null 2>&1".format(pic2))
 
 
 def diff(pic1: str, pic2: str):
@@ -26,22 +26,28 @@ def detect(pic1: str, pic2: str, dir_path: str):
     prepare(pic1, pic2)
     res = diff(pic1, pic2)
     print("diff: " + str(res))
-    # 200 允许一定误差
-    if res >= 200:
+    # 500 允许一定误差
+    if res >= 500:
+        print("rubbish detected")
         edgex_addr = sys.argv[1]
         device = sys.argv[2]
         valuedescriptor = sys.argv[3]
         img = os.path.join(dir_path, pic2)
         exe = os.path.join(dir_path, "rubbish/classify.py")
-        print("python3 " + str(exe) + " " + str(img))
-        re = os.popen("python3 " + str(exe) + " " + str(img)).readlines()
+        cls_cmd = "python3 {} {}".format(exe, img)
+        print("+ " + cls_cmd)
+        re = os.popen(cls_cmd).readlines()
+        real = re[-2].strip('\n')
         cls = re[-1].strip('\n')
-        print("class: " + cls)
-        cmd = "bash d2e.sh {} {} {} {}".format(
+        print("class: {}, name: {}".format(cls, real))
+        trans_cmd = "bash d2e.sh {} {} {} {} > /dev/null 2>&1".format(
             cls, edgex_addr, device, valuedescriptor)
-        print(cmd)
-        os.system(cmd)
-        print("")
+        print("+ " + trans_cmd)
+        os.system(trans_cmd)
+        # 将摄像头休息一会 并避免垃圾拿走时图片变化也触发算法
+        print("sleep for a while (3s)")
+        time.sleep(3)
+        pritn("restart")
 
 
 if __name__ == "__main__":

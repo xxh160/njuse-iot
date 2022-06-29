@@ -20,7 +20,7 @@ export PATH=$PATH:/home/HwHiAiUser/ascend_ddk/arm/bin
 cd $CAMERA/$OUTPUT 
 
 # run camera, ignore output
-./$EXEC -i -c 0 -o ./$RES --overwrite > /dev/null 2>&1
+./$EXEC -i -c 0 -o ./$RES --overwrite
 
 # cp result to here
 cp $RES $HERE 

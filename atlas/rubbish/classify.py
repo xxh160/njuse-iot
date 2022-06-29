@@ -60,4 +60,5 @@ def classify(img: str):
 if __name__ == "__main__":
     img = sys.argv[1]
     result = get_cls(classify(img))
+    print(result[1])
     print(result[0])
