@@ -47,7 +47,7 @@ def detect(pic1: str, pic2: str, dir_path: str):
         # 将摄像头休息一会 并避免垃圾拿走时图片变化也触发算法
         print("sleep for a while (3s)")
         time.sleep(3)
-        pritn("restart")
+        print("restart")
 
 
 if __name__ == "__main__":
