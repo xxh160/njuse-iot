@@ -37,13 +37,13 @@ LED 只是我们展示分类结果的方式, 在实际运用中, 可以换成语
 
 项目部署图如下:
 
-![1](./assets/1.png)
+![1](https://user-images.githubusercontent.com/55646006/179435144-f1c9374f-0431-4a66-9fb5-346bbe586104.png)
 
 我们将 Atlas200DK 抽象为一个 REST 设备, 通过一个服务器来接收 REST 调用.
 
 一次流程如下图所示:
 
-![2](./assets/2.png)
+![2](https://user-images.githubusercontent.com/55646006/179435146-43ea6190-09de-45cd-9847-02e39d88fe38.png)
 
 1. Atlas200DK 上的摄像头将发生目标照片传递给分类算法;
 2. 分类算法将分类结果传递给 server;
